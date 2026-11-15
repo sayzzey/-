@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Карточка товара «Термокружка»</title>
+<style>
+  :root{
+    --navy:#14284B; --ink:#1d2433; --muted:#6b7280;
+    --bg:#f4f1ea; --card:#ffffff; --line:#e6e1d6;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    line-height:1.6;
+  }
+  .wrap{max-width:1040px;margin:0 auto;padding:48px 20px 72px}
+  header{text-align:center;margin-bottom:36px}
+  .kicker{color:var(--navy);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:12px}
+  h1{font-size:clamp(26px,4vw,42px);line-height:1.15;margin:10px 0 8px}
+  .lead{color:var(--muted);margin:0 auto;max-width:640px}
+  .hero{display:grid;grid-template-columns:minmax(0,420px) minmax(0,1fr);gap:36px;align-items:start;margin:40px 0}
+  .hero img{width:100%;height:auto;border-radius:16px;box-shadow:0 18px 50px rgba(20,40,75,.16);display:block}
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 26px}
+  .panel h2{font-size:18px;margin:0 0 12px}
+  .panel p{margin:0 0 14px}
+  .panel p:last-child{margin-bottom:0}
+  .badges{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .badges span{background:#eef2f9;color:var(--navy);border-radius:999px;padding:5px 12px;font-size:13px;font-weight:600}
+  h2.section{font-size:22px;margin:40px 0 16px}
+  .files{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:14px}
+  .file{display:block;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 18px;text-decoration:none;color:var(--ink);transition:.15s}
+  .file:hover{border-color:var(--navy);transform:translateY(-2px)}
+  .file b{display:block;font-size:14px}
+  .file small{color:var(--muted)}
+  .answer{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 30px}
+  .answer h3{margin:0 0 10px;font-size:17px;color:var(--navy)}
+  .answer p{margin:0 0 16px}
+  .answer p:last-child{margin:0}
+  footer{text-align:center;color:var(--muted);font-size:13px;margin-top:44px}
+  footer a{color:var(--navy)}
+  @media (max-width:760px){.hero{grid-template-columns:1fr}.hero img{max-width:420px;margin:0 auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Практическая работа</div>
+    <h1>Карточка товара «Термокружка»</h1>
+    <p class="lead">Фрейм 900 × 1200 px: фото, векторная плашка с текстом и иконка термометра. Экспорт в JPG, PNG и SVG.</p>
+  </header>
+
+  <section class="hero">
+    <a href="export/card.jpg"><img src="export/card.jpg" alt="Готовая карточка товара Термокружка 900 на 1200"></a>
+    <div class="panel">
+      <h2>Что в работе</h2>
+      <p>Фотография термокружки обрезана, фон удалён, яркость и контраст слегка скорректированы. Под кружкой — мягкая тень.</p>
+      <p>Плашка 300 × 60 со скруглением 20 и текст «Держит тепло 12 часов». Иконка термометра собрана из простых фигур и стоит в тёмно-синей плитке.</p>
+      <div class="badges">
+        <span>900 × 1200</span><span>JPG · PNG · SVG</span><span>Фото — растр</span><span>Плашка и иконка — вектор</span>
+      </div>
+    </div>
+  </section>
+
+  <h2 class="section">Файлы</h2>
+  <div class="files">
+    <a class="file" href="export/card.jpg"><b>card.jpg</b><small>67,6 КБ · итоговая карточка</small></a>
+    <a class="file" href="export/card.png"><b>card.png</b><small>186,8 КБ · без потерь</small></a>
+    <a class="file" href="export/badge.svg"><b>badge.svg</b><small>0,5 КБ · плашка</small></a>
+    <a class="file" href="export/thermometer.svg"><b>thermometer.svg</b><small>0,8 КБ · иконка</small></a>
+    <a class="file" href="card.svg"><b>card.svg</b><small>293 КБ · редактируемый макет</small></a>
+    <a class="file" href="README.md"><b>README.md</b><small>описание и ответ на вопрос</small></a>
+  </div>
+
+  <h2 class="section">Ответ на вопрос</h2>
+  <div class="answer">
+    <h3>Почему фото — растровое, а плашка и иконка — векторные?</h3>
+    <p>Фотография содержит сложные непрерывные переходы цвета, блики и текстуру, поэтому её описывают миллионами пикселей — это растровое изображение. Плашка и иконка состоят из простых геометрических форм, которые задаются математическими путями; SVG хранит их как команды и позволяет масштабировать без потери чёткости.</p>
+    <h3>Почему для карточки выбран JPG?</h3>
+    <p>Основное содержимое карточки — фотография с плавными градиентами. JPG хорошо сжимает такие изображения и даёт небольшой вес: 67,6 КБ против 186,8 КБ у PNG. Прозрачность здесь не нужна, а JPG поддерживается всеми маркетплейсами.</p>
+  </div>
+
+  <footer>
+    Фото: <a href="https://commons.wikimedia.org/wiki/File:Reduce_Drinkware_Cold1_Tumbler.png">Williamsplex</a>, CC BY-SA 4.0 · работа: <a href="LICENSE.md">CC BY-SA 4.0</a>
+  </footer>
+</div>
+</body>
+</html>

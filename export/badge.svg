@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="60" viewBox="0 0 300 60">
+  <title>Плашка «Держит тепло 12 часов»</title>
+  <rect width="300" height="60" rx="20" fill="#14284B"/>
+  <text x="150" y="38" text-anchor="middle"
+        font-family="'Fira Sans','DejaVu Sans',Arial,sans-serif"
+        font-size="22" font-weight="600" letter-spacing="0.2"
+        fill="#FFFFFF">Держит тепло 12 часов</text>
+</svg>
